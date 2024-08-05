@@ -10,4 +10,13 @@
 // });
 // const PORT = 5000; //port 5000
 // server.listen(PORT, () => console.log(`server running on ${PORT}`));
-const a = 50;
+import express from "express";
+const app = express();
+const PORT = 3000;
+app.get("/", (req, res) => {
+  res.json({ msg: "Hello students" });
+});
+
+app.Listen(PORT, () => {
+  console.log(`the server is running at http://localhost:${PORT}`);
+});
