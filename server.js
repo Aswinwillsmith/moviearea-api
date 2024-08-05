@@ -8,5 +8,6 @@
 //   res.setHeader("Content Type", "application/json");
 //   res.end(JSON.stringify({ status: 200, message: "my first Api" }));
 // });
-// const PORT = 5000;
+// const PORT = 5000; //port 5000
 // server.listen(PORT, () => console.log(`server running on ${PORT}`));
+const a = 50;
