@@ -11,12 +11,15 @@
 // const PORT = 5000; //port 5000
 // server.listen(PORT, () => console.log(`server running on ${PORT}`));
 import express from "express";
+import movieRoutes from "./routes/movies.routes.js";
 const app = express();
 const PORT = 3000;
 app.get("/", (req, res) => {
-  res.json({ msg: "Hello students" });
+  res.json({ Msg: "Hello students" });
 });
 
-app.Listen(PORT, () => {
+app.use("/movies/", movieRoutes);
+
+app.listen(PORT, () => {
   console.log(`the server is running at http://localhost:${PORT}`);
 });
